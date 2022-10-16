@@ -1,0 +1,13 @@
+package team.lyqwc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LyqwcProjectApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LyqwcProjectApplication.class, args);
+    }
+
+}
