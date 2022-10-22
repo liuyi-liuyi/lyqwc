@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>员工登录</title></head><!--  引入css-->
+<link href="stafflogin.css" rel="stylesheet" type="text/css">
+<link href="../../layui/css/layui.css" rel="stylesheet" type="text/css">
+<body><!--html代码-->
+<div class="layui-fluid">    <!--导航栏开始-->
+    <div class="layui-row">
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item "><a href="/dev/homepage/homepage.html">超市信息管理系统</a></li>
+            <!--在这个井号中，插入超市管理系统首页-->
+            <li class="layui-nav-item layui-this"><a href="/dev/staff/stafflogin/stafflogin.html">员工登录入口</a></li>
+            <li class="layui-nav-item"><a href="/dev/user/userlogin/userlogin.html">会员登录入口</a></li>
+            <li class="layui-nav-item"><a href="javascript:">关于我们</a>
+                <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                    <dd><a href="">#</a></dd>
+                    <dd><a href="">#</a></dd>
+                    <dd><a href="">#</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航栏结束-->
+
+<!--登录部分开始-->
+<div class="layui-container" id="login_div">
+    <div class="layui-row">
+        <form class="layui-form" role="form">
+            <fieldset>
+                <legend><h1>员工登录入口</h1></legend>
+                <div class="layui-form-item">
+                    <label class="layui-form-label label_01">用户名:</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="staffname" required lay-verify="required" placeholder="请输入您的用户名"
+                               autocomplete="off"
+                               class="layui-input label_02">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label label_01">密码:</label>
+                    <div class="layui-input-block">
+                        <input type="password" id="staffpassword" required lay-verify="required"
+                               placeholder="请输入您的8位数密码" autocomplete="off" class="layui-input label_02">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo" onclick="login()">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div><!--登录部分结束--><!--  js代码-->
+<script src="../../layui/layui.js"></script>
+<script src="stafflogin.js"></script>
+</body>
+</html>

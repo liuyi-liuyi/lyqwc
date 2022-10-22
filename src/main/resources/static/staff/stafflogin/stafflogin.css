@@ -1,0 +1,28 @@
+body {
+    background-image: url("../../imgs/R-C.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*id选择器*/
+#login_div {
+    /*border: 1px solid #999;*/
+    padding: 20px;
+    /*边框的圆角*/
+    border-radius: 20px;
+    /*外边距*/
+    margin-top: 60px;
+    /*设置边框的阴影部分*/
+    box-shadow: 2px -2px 4px #999;
+    background-color: hsl(0deg 0% 100% / 61%);
+    border-color: #e38d13;
+
+}
+
+.label_01{
+    font-size: 20px;
+}
+.label_02{
+    font-size: 16px;
+}

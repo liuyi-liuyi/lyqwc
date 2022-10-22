@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /dev
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Ly153424
+    url: jdbc:mysql://localhost:3306/lyqwc?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimeZone=Asia/Shanghai
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.qq.com
+    username: 1534242191@qq.com
+    password: nssrpemnlxcxbafh
+    default-encoding: utf-8
+
+
